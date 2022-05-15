@@ -1,0 +1,4 @@
+node_modules/
+routes/google_auth_register
+public/
+views/
