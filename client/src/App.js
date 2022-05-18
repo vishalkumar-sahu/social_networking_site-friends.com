@@ -13,7 +13,7 @@ import EnterOtp from './components/screens/enterotp';
 import ForgetPassword from './components/screens/forgetPassword';
 import ForgetPasswordOtp from './components/screens/verifyForget';
 import ChangePassword from './components/screens/changePassword';
-
+import Chat  from './components/screens/chat';
 
 import {reducer, initialState} from './reducers/userReducer'
 
@@ -48,6 +48,7 @@ const Routing = ()=>{
         <Route path='/forgettenPassword' element={<ForgetPassword />} />
         <Route path='/verifyForgetPasswordOtp' element={<ForgetPasswordOtp />} />
         <Route path='/changePassword' element={<ChangePassword />} />
+        <Route path='/chat' element={<Chat />} />
     </Routes>
   )
 }

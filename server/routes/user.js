@@ -25,6 +25,29 @@ router.get('/user/:id', requirelogin, (req, res)=>{
     })
 })
 
+router.get('/user/friends/:id', requirelogin, async (req, res)=>{
+    try {
+        const user = await User.findById(req.params.id);
+        const friends = await Promise.all(
+          user.following.map((friendId) => {
+            return User.findById(friendId);
+          })
+        );
+
+        let friendList = [];
+        friends.map((friend) => {
+          const { _id, username, pic } = friend;
+          friendList.push({ _id, username, pic });
+        });
+        
+        console.log(friendList)
+        res.status(200).json(friendList)
+
+    } catch (err) {
+        res.status(500).json(err);
+    }
+})
+
 
 router.put('/follow', requirelogin, (req, res)=>{
     User.findByIdAndUpdate(req.body.followId, {

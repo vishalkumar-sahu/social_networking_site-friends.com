@@ -24,6 +24,8 @@ main();
 
 require('./models/user');
 require('./models/post')
+require('./models/conversation')
+require('./models/message')
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -31,6 +33,8 @@ app.use(express.urlencoded({extended: false}));
 app.use(require('./routes/auth'));
 app.use(require('./routes/post'));
 app.use(require('./routes/user'));
+app.use(require('./routes/conversation'));
+app.use(require('./routes/message'));
 // app.use(require('./routes/otp'));
 // app.use(require('./routes/google_auth_register'))
 // app.use("/routes", express.static('./routes/'));

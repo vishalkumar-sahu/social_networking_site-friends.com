@@ -219,10 +219,10 @@ const Home = ()=>{
             <nav className="navbar">
                 <div className="nav-wrapper">
                     <img src={logo} className="brand-img" alt="" onClick={()=> navigate('/home')} />
-                    {/* <input type="text" className="search-box" placeholder="search" /> */}
+                    <input type="text" className="search-box" placeholder="search" />
                     <div className="nav-items">
                         <img src={home} className="icon" alt="" onClick={()=> navigate('/home')} />
-                        {/* <img src={messenger} className="icon" alt="" /> */}
+                        <img src={messenger} className="icon" alt="" onClick={()=> navigate('/chat')} />
                         <img src={add} className="icon" alt="" onClick={()=> navigate('/createpost')} />
                         {/* <img src={explore} className="icon" alt="" /> */}
                         {/* <img src={like} className="icon" alt="" /> */}
@@ -284,7 +284,7 @@ const Home = ()=>{
                                                 <h2><p className="username"><Link to={item.postedBy._id != state._id ? "/profile/" + item.postedBy._id : "/profile"}>{item.postedBy.username}</Link></p></h2>
                                             </div>
                                             {
-                                                item.postedBy._id == state._id && <span class="material-icons" style={{cursor:"pointer"}} onClick={()=>deletePost(item._id)}>delete</span>
+                                                item.postedBy._id == state._id && <span className="material-icons" style={{cursor:"pointer"}} onClick={()=>deletePost(item._id)}>delete</span>
                                             }
                                             
                                             {/* <img src={option} className="options" alt="" /> */}
@@ -351,7 +351,7 @@ const Home = ()=>{
                                                 <h2><p className="username"><Link to={item.postedBy._id != state._id ? "/profile/" + item.postedBy._id : "/profile"}>{item.postedBy.username}</Link></p></h2>
                                             </div>
                                             {
-                                                item.postedBy._id == state._id && <span class="material-icons" style={{cursor:"pointer"}} onClick={()=>deletePost(item._id)}>delete</span>
+                                                item.postedBy._id == state._id && <span className="material-icons" style={{cursor:"pointer"}} onClick={()=>deletePost(item._id)}>delete</span>
                                             }
                                             
                                             {/* <img src={option} className="options" alt="" /> */}
