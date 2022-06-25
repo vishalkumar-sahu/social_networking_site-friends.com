@@ -1,0 +1,121 @@
+
+.navbar{
+    /* border: 2px solid black !important; */
+    z-index: 10 !important;
+
+}
+.div_chat{
+    padding-bottom: 0px !important;
+    
+}
+
+.chat{
+    margin-top: 50px !important;
+    height: calc(103vh - 70px) !important;
+    display: flex !important;
+    /* border : 2px solid black !important; */
+    
+}
+
+.chatMenu{
+    flex: 3.5 !important;
+    /* box-shadow: 0 2px 4px rgb(0, 0, 0), 0 8px 16px rgb(0, 0, 0) !important; */
+    border: 1px solid black !important;
+    border-top: none !important;
+}
+
+.chatMenuInput{
+    width: 90% !important;
+    /* padding: 10px 0 !important; */
+    margin-left: 10px !important;
+    border: none !important;
+    border-bottom: 1px solid gray !important;
+}
+
+.chatBox{
+    flex: 10 !important;
+}
+
+.chatBoxWrapper{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    position: relative !important;
+    margin: 0px !important;
+    border: 1px solid black;
+    border-top: none !important;
+}
+
+.chatBoxTop{
+    height: 100% !important;
+    overflow-y: scroll !important;
+    padding-right: 10px !important;
+    
+    /* color: blue !important; */
+}
+
+.chatBoxBottom{
+    margin-top: 0px !important;
+    display: flex !important;
+    /* margin-right: 20px !important; */
+
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-shadow: 0 2px 4px rgb(0, 0, 0), 0 8px 16px rgb(0, 0, 0) !important;
+    border: 1px solid black !important;
+
+}
+
+.chatMessageInput{
+    width: 80% !important;
+    height: 90px !important;
+    padding: 10px !important;
+}
+
+.chatSubmitButton{
+    width: 70px !important;
+    height: 40px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    margin-right: 65px !important;
+    /* background-color: teal !important; */
+    /* color: white !important; */
+    /* margin-left: 40px !important; */
+   
+      
+
+}
+button{
+    background-image: url("sendbutton.png") !important;
+    /* image-resolution: 70px 40px !important; */
+    /* image-rendering:auto !important; */
+ background-repeat: no-repeat !important;
+ background-color: white !important;
+  
+}
+
+.chatOnlineWrapper{
+    border: 1px solid black !important;
+    border-top: none !important;
+}
+
+.chatOnline{
+    flex: 3 !important;
+    /* box-shadow: 0 2px 4px rgb(0, 0, 0), 0 8px 16px rgb(0, 0, 0) !important; */
+}
+
+.chatMenuWrapper, .chatBoxWrapper, .chatOnlineWrapper{
+    
+    height: 100% !important;
+}
+
+.noConversationText{
+    position: absolute !important;
+    top: 10% !important;
+    font-size: 50px !important;
+    color: rgb(224, 220, 220) !important;
+    text-align: center;
+    cursor: default !important;
+    /* border: 2px solid black !important; */
+}
