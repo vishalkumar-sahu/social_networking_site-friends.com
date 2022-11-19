@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    
+
+
+}
+
+*:focus{
+    border: none !important;
+}
+
+body{
+    width: 100% !important;
+    background: #fafafa !important;
+    position: relative !important;
+    font-family: 'roboto', sans-serif !important;
+}
+
+.navbar{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 50px !important;
+    background: #fff !important;
+    border-bottom: 1px solid #dfdfdf !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 5px 0px !important;
+    z-index: 10;
+}
+
+.nav-wrapper{
+    width: 70% !important;
+    max-width: 1000px !important;
+    height: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+}
+
+.brand-img{
+    height: 100% !important;
+    margin-top: 5px !important;
+
+}
+
+input.search-box{
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 200px !important;
+    height: 25px !important;
+    background-color: #fafafa !important;
+    border: 1px solid #dfdfdf !important;
+    border-radius: 2px !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    text-align: center !important;
+    text-transform: capitalize !important;
+
+}
+
+.search-box::placeholder{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.nav-items{
+    height: 22px !important;
+    position: relative !important;     
+}
+
+.icon{
+    height: 100% !important;
+    cursor: pointer !important;
+    margin: 0px 10px !important;
+    display: inline-block !important;
+    margin-bottom: 20px !important;
+    
+}
+
+.enlarge{
+    width: 30px !important;
+}
+
+.user-profile{
+    width: 22px !important;
+     border-radius: 50% !important;
+     /* background-image: url(../img/home/profile-pic.png) !important; */
+     background-size: cover !important;
+    
+}
+
+.main{
+    width: 100% !important;
+    padding: 40px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 50px !important;
+    background-color: white;
+}
+
+.wrapper{
+    width: 70% !important;
+    max-width: 1000px !important;
+    display: grid !important;
+    grid-template-columns: 60% 40% !important;
+    grid-gap: 30px !important;
+}
+
+.left-col{
+    display: flex !important;
+    flex-direction: column !important;
+    background-color: white;
+    
+
+}
+
+/* .status-wrapper{
+    width: 100% !important;
+    height: 120px !important;
+    background: #fff !important;
+    border: 1px solid #dfdfdf !important;
+    border-radius: 2px !important;
+    padding: 10px !important;
+    padding-right: 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+    overflow-x: auto !important;} */
+
+/* 
+.status-wrapper::-webkit-scrollbar{
+    display: none !important;
+} */
+
+/* .status-card{
+    flex: 0 0 auto !important;
+    width: 80px !important;
+    max-width: 80px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-right: 15px !important;
+
+} */
+
+.profile-pic{
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    padding: 3px !important;
+    background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%) !important;
+}
+
+.profile-pic img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    border: 2px solid #fff !important;
+
+}
+h2 a{
+    color: unset !important;
+
+
+}
+h2 a{
+    color: black !important;
+    font-weight: lighter !important;
+}
+
+.username {
+    /* width: 100% !important; */
+    overflow: hidden !important;
+    text-align: center !important;
+    /* font-size: 12px !important; */
+    margin-top: 5px !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.post{
+    width: 100% !important;
+    height: auto !important;
+    background: #fff !important;
+    margin-top: 40px !important;
+    /* display: grid;
+    grid-template-rows: 10% 80% 10%; */
+}
+
+.info{
+    width: 100% !important;
+    height: 60px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0px 0px !important;
+    border: 2px solid white !important;
+
+}
+
+.info .username{
+    width: auto !important;
+    color: black !important;
+    font-size:20px !important;
+    margin-left: 10px !important;
+    margin-bottom: 10px !important;
+    
+}
+
+.info .options{
+    height: 10px !important;
+    cursor: pointer !important;
+}
+
+.info .user{
+    display: flex !important;
+    align-items: center !important;
+}
+
+.info .profile-pic{
+    height: 40px !important;
+    width: 40px !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+.info .profile-pic img{
+    border: none !important;
+}
+
+.post-image{
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: cover !important;
+}
+
+.post-content{
+    width: 100% !important;
+    padding: 20px 0px !important;
+
+}
+
+.likes{
+    font-weight: bold !important;
+    margin: 0px !important;
+}
+
+.description{
+    margin: 2px 0px !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+
+.description span{
+    font-weight: bold !important;
+    margin-right: 10px !important;
+
+}
+
+.post-time{
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-size: 12px !important;
+}
+.comment-record-space{
+    padding: 2px 0px !important;
+}
+
+.comment-wrapper{
+    
+    width: 100% !important;
+    height: 50px !important;
+    border-radius: 1px solid #dfdfdf !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+}
+.spaceforcom{
+    padding: 0px 3px !important;
+    font-size: 16px !important;
+    
+}
+
+.comment-wrapper .icon{
+    height: 15px !important;
+}
+
+.comment-box{
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 14px !important;
+
+}
+
+.comment-btn,
+.action-btn{
+    width: 70px !important;
+    height: 100% !important;
+    background: none !important;
+    border: none !important;
+    outline: none !important;
+    text-transform: capitalize !important    ;
+    font-size: 16px !important;
+    color: rgb(0, 162, 255) !important;
+    opacity: 0.5 !important;
+    cursor: pointer !important;
+}
+
+.reaction-wrapper{
+    width: 100% !important;
+    height: 50px !important;
+    display: flex !important;
+    margin-top: -20px !important;
+    align-items: center !important;
+}
+
+.reaction-wrapper .icon{
+    height: 35px !important;
+    width: 35px !important;
+    margin: 0 !important;
+    margin-right: 20px !important;
+
+}
+
+.reaction-wrapper .icon.save{
+    margin-left: auto !important;
+}
+
+.right-col{
+    padding: 20px !important;
+    background-color: white;
+}
+
+.profile-card{
+    width: fit-content !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+
+}
+
+.profile-card .profile-pic{
+    flex: 0 0 auto !important;
+    padding: 0 !important;
+    background: none !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 10px !important;
+}
+
+.profile-card:first-child .profile-pic{
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.profile-card .profile-pic img{
+    border: none !important;
+}
+
+.profile-card .username{
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    color: #000 !important;
+    cursor: pointer !important;
+}
+
+.sub-text{
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    margin-top: 5px !important;
+}
+
+.action-btn{
+    opacity: 1 !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
+.suggestion-text{
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: 700 !important;
+    margin: 20px 0 !important;
+}
+
+@media (max-width : 1100px){
+    .right-col, .search-box{
+        display: none !important;
+    }
+    .nav-wrapper,
+    .wrapper{
+        width: 90% !important;
+    }
+    .wrapper{
+        display: block !important;
+    }
+}
+
+@media (max-width : 500px){
+    .nav-items .icon{
+        margin: 0 5px !important;
+    }
+    .post-image{
+        height: 300px !important;
+    }
+}

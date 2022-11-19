@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Grape+Nuts&family=Homemade+Apple&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+.body{
+    /* margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box; */
+    display: grid !important;
+    grid-template-rows: 15% 65% 20% !important;
+}
+
+.title{
+    font-family: 'Grand Hotel', cursive !important;
+    /* font-family: 'Grape Nuts', cursive; */
+    /* font-family: 'Homemade Apple', cursive; */
+    /* font-family: 'Oleo Script Swash Caps', cursive; */
+}
+
+
+.main_signup{
+    display: grid !important;
+    grid-template-columns: 35% 50% 15% !important;
+}
+
+.left{
+    margin: 5rem 5rem !important;
+ font-family: 'Dancing Script', cursive;
+}
+.left img{
+ 
+  height: 50% !important;
+  width: auto !important;
+  
+}
+.middle_up{
+    align-items: center !important;
+    text-align: center !important;
+    max-width: 400px !important;  
+    
+}
+
+.signup{
+    border: 1px solid black !important;
+    width: 100% !important;
+   
+}
+
+.input_ele{
+    margin: 7px 0px !important;
+}
+/* 
+#google{
+    margin-bottom: 20px !important;
+} */
+/* 
+.forgotten_pass{
+    margin-bottom: 30px !important;
+} */
+
+.signin{
+    margin: 20px 0px !important;
+    margin-right: 200px !important;
+    /* width: 100% !important; */
+}
+a{
+    color: blue !important;
+}
+.register{
+    border: 1px solid black !important;
+    width: 100% !important; 
+   
+    padding: 20px !important;
+    
+}
+
+/* .topic{
+    margin-bottom: 15px !important;
+}
+
+.download{
+     margin-right: 400px; 
+    padding-right: 350px !important;
+}
+
+.playstore{
+    width: 150px !important;
+    max-width: 200px !important;
+    cursor: pointer !important;
+}
+
+.appstore{
+    width: 150px !important;
+    max-width: 200px !important;
+    cursor: pointer !important;
+}
+
+.google{
+    margin-left: 143px !important;
+    margin-bottom: 14px !important;
+    
+} */
