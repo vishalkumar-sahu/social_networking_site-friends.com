@@ -24,7 +24,8 @@
     "heroku-postbuild" : "npm run install-client && npm run build",
     "start" : "node app.js",
     "client" : "cd client && npm start",
-    "dev" : "concurrently -n 'server,client' -c 'red,green' \"nodemon app.js\" \"npm run client\""
+    "socket" : "cd socket && node index.js",
+    "dev" : "concurrently -n 'server,client,socket' -c 'red,green,blue' \"nodemon app.js\" \"npm run client\" \"nodemon index.js\""
   },
   "keywords": [
     "social",
