@@ -48,6 +48,10 @@ app.use(express.static(__dirname + '/public'));
 //     res.render('index.ejs');
 // })
 
+if( process.env.NODE_ENV === "production" ){
+    app.use(express.static("client/build"));
+}
+
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Connected on port : ${PORT}`);
