@@ -1,7 +1,7 @@
 import React, {useEffect, useContext, createContext, useReducer} from 'react';
 import './App.css';
 
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
+import { HashRouter, Route, Routes, useNavigate } from 'react-router-dom'
 import Home from './components/screens/home.js';
 import Signin from './components/screens/login.js';
 import Signup from './components/screens/signup.js';
@@ -57,9 +57,9 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
   return (
     <UserContext.Provider value={{state, dispatch}}>
-    <BrowserRouter>
+    <HashRouter>
       <Routing />
-    </BrowserRouter>
+    </HashRouter>
     </UserContext.Provider>
   );
 }
