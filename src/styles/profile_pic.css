@@ -1,0 +1,129 @@
+/* The Modal (background) */
+.create-post {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    display: block !important; /* Hidden by default */
+    height: 100% !important; /* Full height */
+    left: 0 !important;
+    /* overflow: auto !important; */
+    position: fixed !important; /* Stay in place */
+    top: 0 !important;
+    width: 100% !important; /* Full width */
+    z-index: 1 !important; /* Sit on top */
+  }
+  
+  /* Modal Content/Box */
+  .create-post__content {
+    background-color: #fefefe !important;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%) !important;
+    margin: 15% auto !important; /* 15% from the top and centered */
+    margin-top: 10% !important;
+    width: 27rem !important; /* Could be more or less, depending on screen size */
+  }
+  
+  .create-post__container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .create-post__title {
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    padding: 1.25rem 0 0.5rem 1.25rem !important;
+  }
+  
+  .create-post__close {
+    align-items: center !important;
+    display: grid !important;
+    justify-items: right !important;
+    padding: 1.25rem 1.25rem 0.5rem 0 !important;
+  }
+  
+  .create-post__close img:hover {
+    cursor: pointer !important;
+  }
+  
+  .create-post__subtitle {
+    background: #e5e7eb !important;
+    height: 1px !important;
+    margin-bottom: 0.5rem !important;
+    width: 100% !important;
+  }
+  
+  .create-post__form {
+    width: 100% !important;
+  }
+  
+  .create-post__btn:hover {
+    cursor: pointer !important;
+    opacity: 0.8 !important;
+  }
+  
+  .create-post__image {
+    display: grid !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 2rem !important;
+  }
+  
+  .create-post__image > div {
+    display: inline-block !important;
+    position: relative !important;
+  }
+  
+  .create-post__image > div:hover {
+    cursor: pointer !important;
+  }
+  
+  .create-post__image img {
+    border-radius: 0.5rem !important;
+    height: 15rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+  
+  .create-post__image svg {
+    height: 1.5rem !important;
+    position: absolute !important;
+    right: -0.5rem !important;
+    top: -0.5rem !important;
+    width: 1.5rem !important;
+  }
+  
+  .create-post__image svg:hover {
+    cursor: pointer !important;
+  }
+  
+  .create-post__image-picker {
+    text-align: center !important;
+    padding: 2rem !important;
+  }
+  
+  .create-post__image-picker:hover {
+    cursor: pointer !important;
+  }
+  
+  .create-post__image-picker p {
+    padding: 1rem 0 !important;
+  }
+  
+  .create-post__footer {
+    align-items: center !important;
+    background-color: #f9fafb !important;
+    display: grid !important;
+    font-weight: bold !important;
+    grid-template-columns: max-content max-content !important;
+    justify-content: right !important;
+    padding: 1rem !important;
+  }
+  
+  .create-post__upload {
+    background: #3b82f6 !important;
+    border-radius: 0.25rem !important;
+    color: #fff !important;
+    font-size: 0.9375rem !important;
+    padding: 0.5rem 0.75rem !important;
+  }
+  
+  .create-post__upload:hover {
+    cursor: pointer !important;
+  }
